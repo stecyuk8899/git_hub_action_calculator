@@ -1,0 +1,16 @@
+name: Basic Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout репозиторій
+        uses: actions/checkout@v4
+
+      - name: Вивід повідомлення
+        run: echo "Hello, GitHub Actions!"
