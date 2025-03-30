@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout репозиторій
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Вивід повідомлення
+      - name: Show message
         run: echo "Hello, GitHub Actions!"
