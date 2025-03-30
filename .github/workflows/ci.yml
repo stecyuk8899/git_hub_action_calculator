@@ -22,11 +22,10 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          python -m pytest --cov=my_app --cov-report=xml
+          python -m pytest --cov=my_app --cov-report=xml --cov-fail-under=70
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: coverage.xml
-
